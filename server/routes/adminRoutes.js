@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Complaint = require("../models/Complaint");
+const Complaint = require("../models/complaint");
 const authMiddleware = require("../middleware/authMiddleware");
 const adminMiddleware = require("../middleware/adminMiddleware");
 

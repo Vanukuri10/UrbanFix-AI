@@ -9,7 +9,7 @@ const { Readable } = require("node:stream");
 require("dotenv").config();
 const path = require("node:path");
 
-const Complaint = require("./models/Complaint");
+const Complaint = require("./models/complaint");
 const authRoutes = require("./routes/authRoutes");
 const cloudinary = require("./config/cloudinary");
 const upload = require("./config/upload");
