@@ -1,0 +1,383 @@
+
+.admin-login-page {
+  min-height: 100vh;
+  background: #f3f7f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  position: relative;
+}
+
+.admin-back {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  border: none;
+  background: transparent;
+  color: #245b43;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 38px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px #183c2810;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.admin-eyebrow {
+  color: #34815c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.admin-login-card h1 {
+  color: #183b2b;
+  font-size: 29px;
+  margin: 5px 0 0;
+}
+
+.admin-login-card p {
+  color: #7a8980;
+  font-size: 13px;
+  margin: 0 0 15px;
+}
+
+.admin-login-card label,
+.investigation-details label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #405449;
+}
+
+.admin-login-card input,
+.investigation-details select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dce6df;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  color: #263b30;
+}
+
+.admin-login-card input:focus,
+.investigation-details select:focus {
+  border-color: #34815c;
+}
+
+.admin-login-card button[type="submit"] {
+  margin-top: 12px;
+  padding: 14px;
+  background: #245b43;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-login-card button:disabled {
+  opacity: 0.6;
+}
+
+.admin-error {
+  background: #fff0ed;
+  color: #b84939;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+.operations-page {
+  min-height: 100vh;
+  background: #f5f7f5;
+  color: #24392d;
+}
+
+.operations-header {
+  min-height: 76px;
+  padding: 14px 5%;
+  background: white;
+  border-bottom: 1px solid #e6ece7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.operations-brand {
+  font-size: 21px;
+  font-weight: 750;
+  color: #204c37;
+}
+
+.operations-brand b {
+  color: #4b9b6b;
+}
+
+.operations-subtitle {
+  display: block;
+  font-size: 10px;
+  color: #87958c;
+  margin-top: 4px;
+}
+
+.operations-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.operations-actions button,
+.panel-heading button {
+  border: 1px solid #dce6df;
+  background: white;
+  padding: 9px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #355a43;
+}
+
+.admin-online {
+  color: #278653;
+  font-size: 12px;
+}
+
+.operations-main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 35px 5%;
+}
+
+.operations-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.operations-heading h1 {
+  font-size: 29px;
+  margin: 8px 0;
+  color: #1c3d2b;
+}
+
+.operations-heading p {
+  color: #829087;
+  font-size: 13px;
+  margin: 0;
+}
+
+.incident-total {
+  background: #e8f2eb;
+  color: #2c7049;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.operations-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.8fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.map-section,
+.incident-feed,
+.investigation-panel {
+  background: white;
+  border: 1px solid #e6ece7;
+  border-radius: 12px;
+  padding: 18px;
+  min-width: 0;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.panel-heading h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #244633;
+}
+
+.panel-heading > span {
+  font-size: 11px;
+  color: #859188;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 10px;
+  margin-bottom: 13px;
+}
+
+.legend-pending { color: #d18b20; }
+.legend-verified { color: #3182ce; }
+.legend-progress { color: #805ad5; }
+.legend-resolved { color: #269b68; }
+
+.operations-map {
+  height: 520px;
+  border-radius: 9px;
+  overflow: hidden;
+  background: #e9efeb;
+}
+
+.admin-map {
+  height: 100%;
+  width: 100%;
+}
+
+.incident-feed {
+  max-height: 590px;
+  overflow-y: auto;
+}
+
+.incident-item {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  gap: 11px;
+  padding: 12px 8px;
+  border: none;
+  border-bottom: 1px solid #edf0ed;
+  background: white;
+  cursor: pointer;
+  border-radius: 7px;
+  align-items: center;
+}
+
+.incident-item:hover,
+.incident-selected {
+  background: #f0f6f1;
+}
+
+.incident-item img,
+.incident-placeholder {
+  width: 65px;
+  height: 58px;
+  border-radius: 7px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.incident-placeholder {
+  display: grid;
+  place-items: center;
+  background: #eaf1eb;
+  color: #43805a;
+  font-size: 25px;
+}
+
+.incident-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.incident-item-details strong {
+  color: #304c3b;
+  font-size: 12px;
+}
+
+.incident-item-details span,
+.incident-item-details small {
+  color: #87938a;
+  font-size: 10px;
+}
+
+.investigation-panel {
+  margin-top: 22px;
+}
+
+.investigation-content {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.2fr);
+  gap: 25px;
+}
+
+.investigation-image {
+  width: 100%;
+  max-height: 270px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.investigation-details p {
+  font-size: 13px;
+  color: #68796e;
+  line-height: 1.7;
+}
+
+.investigation-details strong {
+  color: #344d3d;
+}
+
+.investigation-details select {
+  display: block;
+  margin-top: 10px;
+  max-width: 280px;
+}
+
+@media (max-width: 900px) {
+  .operations-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .incident-feed {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .operations-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .operations-actions {
+    flex-wrap: wrap;
+  }
+
+  .operations-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .operations-main {
+    padding: 25px 4%;
+  }
+
+  .operations-map {
+    height: 380px;
+  }
+
+  .investigation-content {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-login-card {
+    padding: 25px;
+  }
+}
